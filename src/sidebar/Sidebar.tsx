@@ -25,7 +25,7 @@ function Sidebar() {
         className={cn(
           "opacity-50 items-center justify-center cursor-pointer duration-300 ease-in-out hover:opacity-100",
           { "absolute top-1 left-7 w-12 h-12 ": isCollapsed },
-          { "flex justify-end ": !isCollapsed }
+          { "absolute top-1 right-1 m-1.5": !isCollapsed }
         )}
       >
         {isCollapsed ? <PanelLeftOpen /> : <PanelLeftClose />}
