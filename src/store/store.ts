@@ -1,3 +1,3 @@
-import { atom } from "jotai";
+import { atomWithStorage } from "jotai/utils";
 
-export const isCollapsedAtom = atom(false)
+export const isCollapsedAtom = atomWithStorage('isCollapsed', false)
